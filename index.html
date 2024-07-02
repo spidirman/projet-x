@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=1, minimum-scale=0.5">
     <title>Projet X Colin</title>
+    <link rel="icon" type="image/png" href="https://projet-x-colin.vercel.app/photo.png"> 
+    <meta name="description" content="Pojet X - Colin : premier en gav = grosse tepu">
+    <meta property="og:image" content="https://projet-x-colin.vercel.app/photo.png">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="French">
+
+
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -20,6 +27,7 @@
         header {
             background: linear-gradient(90deg, #ff4500, #ff0057);
             padding: 20px;
+            width: 100%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             animation: slideDown 1s ease-out;
         }
@@ -66,6 +74,32 @@
         .spotify {
             margin: 20px 0;
         }
+        .embed {
+            background-color: #1c1c1c;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            align-items: center;
+            border-left: 4px solid #ff4500;
+            box-shadow: 0 0 10px rgba(255, 69, 0, 0.5);
+        }
+        .embed img {
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        .embed-content {
+            text-align: left;
+        }
+        .embed-content h3 {
+            margin: 0;
+            color: #ff4500;
+        }
+        .embed-content p {
+            margin: 5px 0 0 0;
+        }
         footer {
             background: linear-gradient(90deg, #ff0057, #ff4500);
             padding: 15px;
@@ -95,15 +129,18 @@
         <h1>Projet X</h1>
     </header>
     <div class="container">
-        <div class="card">
-            <h2>Détails Projet X</h2>
-            <p>Date : <strong>25 Août 2024</strong></p>
-            <p>Heure : <strong>21h00</strong></p>
-            <p>Lieu : <strong>à côté d'un cimetière</strong></p>
+        <div class="embed">
+            <img src="./photo.png" alt="Présentation">
+            <div class="embed-content">
+                <h3>Présentation</h3>
+                <p>Colin : le gars le plus aléatoire de Bretagne<br><br>Projet X: immagine juste un groupe de potes completement rapta et sous 6g de frozen, jpense que t'a saisis le principe</p>
+            </div>
         </div>
         <div class="card">
-            <h2>Présentation</h2>
-            <img src="/photo.png" alt="Présentation">
+            <h2>Détails Projet X</h2>
+            <p>Date : <strong>24 Août 2024</strong></p>
+            <p>Heure : <strong>20h00</strong></p>
+            <p>Lieu : <strong>à côté d'un cimetière</strong></p>
         </div>
         <div class="card">
             <h2>Countdown</h2>
@@ -120,8 +157,9 @@
         <p>© 2024 Projet X</p>
     </footer>
     <script>
+        // Countdown Timer Script
         const countdown = document.getElementById('countdown');
-        const eventDate = new Date('August 24, 2024 21:00:00').getTime();
+        const eventDate = new Date('August 24, 2024 20:00:00').getTime();
 
         const updateCountdown = () => {
             const now = new Date().getTime();
