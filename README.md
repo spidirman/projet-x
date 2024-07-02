@@ -5,7 +5,7 @@ Ce projet est un site web pour présenter l'événement "Projet X" avec Colin, p
 
 ## Aperçu
 
-![Aperçu du site](./img/preview.png)
+![Aperçu du site](./.img/preview.png)
 
 ## Fonctionnalités
 
