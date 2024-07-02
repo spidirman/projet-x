@@ -51,7 +51,10 @@
             box-shadow: 0 0 10px rgba(255, 69, 0, 0.5);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-
+        .card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
         .card h2 {
             color: #ff4500;
             margin-top: 0;
@@ -99,6 +102,10 @@
             <p>Lieu : <strong>à côté d'un cimetière</strong></p>
         </div>
         <div class="card">
+            <h2>Présentation</h2>
+            <img src="/photo.png" alt="Présentation">
+        </div>
+        <div class="card">
             <h2>Countdown</h2>
             <div id="countdown" class="countdown"></div>
         </div>
@@ -113,7 +120,6 @@
         <p>© 2024 Projet X</p>
     </footer>
     <script>
-        // Countdown Timer Script
         const countdown = document.getElementById('countdown');
         const eventDate = new Date('August 24, 2024 21:00:00').getTime();
 
